@@ -1,0 +1,47 @@
+<!-- Create a web page that shows use of transition properties, transition delay and duration            -->
+<!-- effect -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            margin: 20px auto;
+            transition: background-color 2s ease-in-out, transform 1s ease-in-out;
+            /* Adds transition effects to background color and transform */
+        }
+
+        .box:hover {
+            background-color: coral; /* Changes color on hover */
+            transform: scale(1.5); /* Enlarges the box */
+            transition-delay: 0.5s; /* Adds a delay before the effect starts */
+        }
+
+        .text {
+            font-size: 20px;
+            color: black;
+            transition: color 1s ease-in-out;
+        }
+
+        .text:hover {
+            color: red; /* Changes text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transition Effects</h1>
+    <div class="box"></div>
+    <p class="text">Hover over the box or this text to see the effects!</p>
+</body>
+</html>
